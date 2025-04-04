@@ -1,0 +1,70 @@
+header {
+    background-color: #124491;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: white;
+}
+
+
+.Buscarh1{
+    color: #124491;
+    text-align: center;
+}
+
+.Cadastrarh1{
+    color: #124491;
+    text-align: center;
+}
+
+.Transferirh1{
+    color: #124491;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebrar linha se a tela for pequena */
+
+}
+
+input, button {
+    padding: 8px;
+    border: 1.3px solid #d3d0d0;
+    border-radius: 4px;
+}
+
+input:focus{
+    border-color:  #124491;
+    outline: none;
+}
+.buttonImg{
+    height: 17px;
+}
+.button{
+    height: 34px ;
+}
+.HeaderButton {
+    background-color: #124491;
+    color: aliceblue;
+    border: none;
+}
+.main{
+    align-items: center;
+}
+nav{
+    display: flex;
+    margin-left: auto;
+    display: flex;
+}
+
+.ControlePatrimonial {
+    display: flex;
+    text-align: left;
+    color: aliceblue;
+    align-items: center;  
+    font-size: 100%;
+}
