@@ -1,7 +1,8 @@
 const PatrimonioService = require('../services/patrimonioServices');
 
 async function listar(req, res) {
-    const patrimonios = await PatrimonioService.listarPatrimonios();
+    const filtros = req.query;
+    const patrimonios = await PatrimonioService.listarPatrimonios(filtros);
     return res.json(patrimonios);
 }
 
