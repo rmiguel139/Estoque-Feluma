@@ -37,8 +37,22 @@ async function criarPatrimonio(data) {
     }
     return await Patrimonio.create(data);
 }
+
+
+async function transferirPorNumero(numero_patrimonio, novoSetor) {
+    const patrimonio = await Patrimonio.findOne({ where: { numero_patrimonio } });
+  
+    if (!patrimonio) return null;
+  
+    patrimonio.setor = novoSetor;
+    await patrimonio.save();
+  
+    return patrimonio;
+  }
+  
   
   module.exports = {
+    transferirPorNumero,
     listarPatrimonios,
-    criarPatrimonio,
+    criarPatrimonio
 };

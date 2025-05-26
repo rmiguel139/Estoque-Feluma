@@ -5,5 +5,5 @@ const patrimonioController = require('../controllers/patrimonioController');
 
 router.get('/', patrimonioController.listar);
 router.post('/', patrimonioController.criar);
-
+router.put('/', patrimonioController.transferir)
 module.exports = router;

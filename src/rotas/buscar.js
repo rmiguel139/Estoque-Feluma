@@ -73,7 +73,7 @@ function Buscar() {
       <div className="tabelaPatrimonios">
         <div className="linhaPatrimonio ">
           <div className="cabecalho">Tipo</div>
-          <div className="cabecalho">Número</div>
+          <div className="cabecalho">Patrimônio</div>
           <div className="cabecalho">Setor</div>
         </div>
             {resultados.map((p) => (
